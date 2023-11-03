@@ -12,8 +12,7 @@ class ScraperKabum():
         self.driver.get(f'https://www.kabum.com.br/busca/{self.__produto.replace(" ", "-")}')
 
     def get_all_pages(self) -> list[str]:
-        """Multiprocessing still in development. The multiprocessing code won't work.
-
+        """
         Returns:
             list[str]: list with all of the links which contain the desired product.
         """
