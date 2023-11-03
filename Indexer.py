@@ -1,5 +1,4 @@
 import json
-from pprint import pprint
 import pandas as pd
 
 pd.set_option('display.max_rows', None)
