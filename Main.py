@@ -1,4 +1,4 @@
-from ScrapeKabum import ScraperKabum
+from ScrapeKabum import scraper_kabum
 import json
 
 def str_to_float(s: str) -> float:
@@ -6,7 +6,7 @@ def str_to_float(s: str) -> float:
     return float(final_s)
 
 if __name__ == '__main__':
-    s: ScraperKabum = ScraperKabum("Product_Name")
+    s: scraper_kabum = ScraperKabum("Product_Name")
     links: list[str] = s.get_all_pages() #Comment this if you have a links file already
     # links: list[str] = list() 
     # with open('links_PRODUCT_NAME_Kabum.txt', 'r') as f:
