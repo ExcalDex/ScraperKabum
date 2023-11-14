@@ -1,7 +1,7 @@
 import requests
 from lxml import html
 
-class ScraperKabum():
+class scraper_kabum():
     def __init__(self, produto:str) -> None:
         self.__produto: str = produto
         self.__data: dict[str, list[str]] = {'Nome' : [], 'Valor' : [], 'Link': []}
