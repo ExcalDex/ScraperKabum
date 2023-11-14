@@ -1,4 +1,5 @@
 import json
+from pprint import pprint
 import pandas as pd
 
 pd.set_option('display.max_rows', None)
@@ -12,4 +13,4 @@ with open(f'{name_file}.json', 'r') as f:
 
 product_data = df_data[df_data['Nome'].str.contains(name_product, case=False, na=False)]
 product_data.sort_values(by="Valor", inplace=True)
-print(product_data)
+pprint(product_data)
