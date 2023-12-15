@@ -7,14 +7,15 @@ def str_to_float(s: str) -> float:
 
 if __name__ == '__main__':
     s: scraper_kabum = scraper_kabum("Product_Name")
-    links: list[str] = s.get_all_pages() #Comment this if you have a links file already
+    links: list[str] = s.get_all_pages()
     # links: list[str] = list() 
     # with open('links_PRODUCT_NAME_Kabum.txt', 'r') as f:
         # links = (f.read()).split('\n')
-# Uncomment to run a file that already has all the links you want ^
-    with open('links_PRODUCT_NAME_Kabum.txt', 'w') as f:#Comment this if you have a links file already
-       for link in links: #Comment this if you have a links file already
-            f.write(f'{link}\n') #Comment this if you have a links file already
+# Tire os comentários se você já tem um arquivo com os links^
+    with open('links_PRODUCT_NAME_Kabum.txt', 'w') as f:
+       for link in links:
+            f.write(f'{link}\n')
+#Coloque comentários nas linhas 15, 16 e 17 se você já tem um arquivo com os links^
 
 
             
