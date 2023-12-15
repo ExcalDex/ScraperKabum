@@ -1,3 +1,10 @@
+-- Bibliotecas necessárias para rodar o código da classe:
+1. lxml
+
+-- Bibliotecas necessárias para rodar o código do Main e do Indexer:
+1. pandas
+2. pprint
+
 -- ScrapeKabum.py:
 Arquivo da classe do Web Scraper.
 
