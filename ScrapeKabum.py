@@ -4,9 +4,12 @@ from lxml import html
 class scraper_kabum():
     def __init__(self, produto:str) -> None:
         self.__produto: str = produto
-        self.__data: dict[str, list[str]] = {'Nome' : [], 'Valor' : [], 'Link': []}
+        self.__data: dict[str, list[str]] = dict()
     
     def get_all_pages(self) -> list[str]:
+        """
+        Retorna todos os links que possuem o produto desejado.
+        """
         links: list[str] = list()
         j: int = 2
         times_ten_correction = 0
@@ -36,6 +39,10 @@ class scraper_kabum():
         return links
 
     def get_pages_contents(self, links: list[str]) -> dict:
+        """ 
+        Retorna um dicionário com todos os produtos desejados, com seus respectivos preços e links.
+        """
+        self.__data = {'Nome' : [], 'Valor' : [], 'Link': []}
         contador: int = 0
         for link in links:
             if link == '':
