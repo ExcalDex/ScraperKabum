@@ -1,4 +1,3 @@
-
 -- ScrapeKabum.py:
 Arquivo da classe do Web Scraper.
 
