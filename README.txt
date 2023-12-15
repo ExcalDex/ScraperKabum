@@ -1,7 +1,7 @@
 -- Bibliotecas necessárias para rodar o código da classe:
 1. lxml
 
--- Bibliotecas necessárias para rodar o código do Main e do Indexer:
+-- Bibliotecas necessárias para rodar o código do Indexer:
 1. pandas
 2. pprint
 
