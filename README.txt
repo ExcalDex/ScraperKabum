@@ -1,5 +1,6 @@
 -- Bibliotecas necessárias para rodar o código da classe:
 1. lxml
+2. requests
 
 -- Bibliotecas necessárias para rodar o código do Indexer:
 1. pandas
